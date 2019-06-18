@@ -1,0 +1,17 @@
+*&---------------------------------------------------------------------*
+*& Report ZHELLOWORLD01
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZHELLOWORLD01.
+PARAMETERS: pa_name type c length 12 DEFAULT 'Hugo' lower case,
+            pa_birth type D DEFAULT '19830123'.
+DATA l_hello(5) VALUE 'Hello'.
+
+IF pa_name = 'Hugo'.
+  Write text-001.
+ElSEIF pa_name IS INITIAL.
+  Write text-002.
+ELSE.
+  WRITE: l_hello, pa_name.
+ENDIF.
