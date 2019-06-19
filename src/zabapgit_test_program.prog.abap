@@ -1,0 +1,3 @@
+REPORT  ZABAPGIT_TEST_PROGRAM.
+
+WRITE 'Hello World'.
